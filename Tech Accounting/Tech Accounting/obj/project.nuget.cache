@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "kVfMrRf0L+uX3fIrQnD4pMv/jiY8jFVGjpMSItyrx3exH8WPVN6YxrFisW6gu3vm3mvJyprMRgxG6KuzAg+qCw==",
+  "dgSpecHash": "Z18HcH3cQaHbIgj4iJVYsF2+bZgnhxkTT1DkK1uqAz7/YLLpcUtRDnrOR5orYe0n6KCvh/ocaqPaWxsq6xKWCg==",
   "success": true,
   "projectFilePath": "D:\\proj\\Tech Accounting\\Tech Accounting\\Tech Accounting.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\KAYAYASHA\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.0\\microsoft.data.sqlite.core.7.0.0.nupkg.sha512",
+    "C:\\Users\\KAYAYASHA\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.2\\sqlitepclraw.bundle_e_sqlite3.2.1.2.nupkg.sha512",
+    "C:\\Users\\KAYAYASHA\\.nuget\\packages\\sqlitepclraw.core\\2.1.2\\sqlitepclraw.core.2.1.2.nupkg.sha512",
+    "C:\\Users\\KAYAYASHA\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.2\\sqlitepclraw.lib.e_sqlite3.2.1.2.nupkg.sha512",
+    "C:\\Users\\KAYAYASHA\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.2\\sqlitepclraw.provider.e_sqlite3.2.1.2.nupkg.sha512",
+    "C:\\Users\\KAYAYASHA\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
   "logs": []
 }

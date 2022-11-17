@@ -7,4 +7,9 @@
     <RootNamespace>Tech_Accounting</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="7.0.0" />
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="2.1.2" />
+  </ItemGroup>
+
 </Project>
