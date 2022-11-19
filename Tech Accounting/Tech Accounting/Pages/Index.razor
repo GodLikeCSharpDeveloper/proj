@@ -1,9 +1,53 @@
 ﻿@page "/"
+@using Data
+@using Tech_Accounting.Models;
+@inject TechRepository techRepository
 
-<PageTitle>Index</PageTitle>
+<div class="container-fluid">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Number</th>
+               
+            </tr>
+        <tbody>
+                @if (AllObj != null)
+                {
+                    @foreach (var techs in AllObj)
+                    {
+                    <tr>
+                        <td>@techs.TechDate</td>
+                        <td>@techs.TechNumber</td>
+                        <td>@techs.TechDescription</td>
+                    </tr>
+                    }
+                }
+            <tr>
+                <th><input type="text" class="" @bind="obj.TechNumber" /></th>
+                <th><input type="text" class="" @bind="obj.TechDate" /></th>
+                <th><input type="text" class="" @bind="obj.TechDescription" /></th>
+                <th><input type="button" class="" @onclick="CreateEmployee" value="Save" /></th>
+            </tr>
+                 
 
-<h1>Hello, world!</h1>
+        </tbody>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+@code {
+    List<Techprop> AllObj;
+    protected override async Task OnInitializedAsync()
+    {
+        AllObj = await Task.Run(() => techRepository.GetAllTechPropsAsync());
+    }
+    Techprop obj = new Techprop();
+    protected async void CreateEmployee()
+    {
+        await techRepository.InsertTechPropsAsync(obj);
 
-Welcome to your new app.
+    }
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+}

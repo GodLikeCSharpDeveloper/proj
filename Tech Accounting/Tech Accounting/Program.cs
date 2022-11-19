@@ -1,13 +1,17 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using Microsoft.EntityFrameworkCore;
 using Tech_Accounting.Data;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Add services to the container.c
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddSingleton<WeatherForecastService>();
+builder.Services.AddScoped<TechRepository>();
+builder.Services.AddDbContext<TechContext>(option =>
+                option.UseSqlite(builder.Configuration.GetConnectionString("myconn")));
 
 var app = builder.Build();
 
