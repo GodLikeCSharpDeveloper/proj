@@ -9,30 +9,41 @@
             <tr>
                 <th>Date</th>
                 <th>Number</th>
-               
+                <th>Tech description</th>
+
             </tr>
+        </thead>
         <tbody>
-                @if (AllObj != null)
+
+            @if (AllObj != null)
+            {
+                @foreach (var techs in AllObj)
                 {
-                    @foreach (var techs in AllObj)
-                    {
                     <tr>
                         <td>@techs.TechDate</td>
                         <td>@techs.TechNumber</td>
                         <td>@techs.TechDescription</td>
+                        <td>
+                            <a class="nav-link" href="">
+                                <span class="oi oi-pencil" aria-hidden="true">Edit</span>
+                            </a>
+                            <a class="nav-link" href="">
+                                <span class="oi oi-trash" aria-hidden="true">Delete</span>
+                            </a>
+                        </td>
                     </tr>
-                    }
                 }
+            }
             <tr>
-                <th><input type="text" class="" @bind="obj.TechNumber" /></th>
-                <th><input type="text" class="" @bind="obj.TechDate" /></th>
-                <th><input type="text" class="" @bind="obj.TechDescription" /></th>
+                <th><input type="text" class="" @bind="obj.TechDate" @onclick="@(() => obj.TechDate="")" /></th>
+                <th><input type="text" class="" @bind="obj.TechNumber" @onclick="@(() => obj.TechNumber=null)" /></th>
+                <th><input type="text" class="" @bind="obj.TechDescription" @onclick="@(() => obj.TechDescription="")" /></th>
                 <th><input type="button" class="" @onclick="CreateEmployee" value="Save" /></th>
             </tr>
-                 
+
 
         </tbody>
-        </thead>
+
         <tbody>
         </tbody>
     </table>
