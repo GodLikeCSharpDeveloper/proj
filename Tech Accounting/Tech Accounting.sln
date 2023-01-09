@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tech Accounting", "Tech Accounting\Tech Accounting.csproj", "{91CEC400-4673-4C19-A2BF-4DBEF6AB947E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tech Accounting", "Tech Accounting\Tech Accounting.csproj", "{91CEC400-4673-4C19-A2BF-4DBEF6AB947E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
